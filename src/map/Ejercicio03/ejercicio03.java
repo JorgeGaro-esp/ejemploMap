@@ -21,8 +21,8 @@ public class ejercicio03 {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        String frase = "Ella qUEria Querer lo que querIA pero quErEr no siempre es querer";
-        String[] palabraArray = frase.split(" ");
+        String frase = "Ella qUEria Querer  lo que querIA     pero  quErEr  no siempre es querer";
+        String[] palabraArray = frase.trim().split("\\s+");
 
         LinkedHashMap<String, Integer> palabraMap = new LinkedHashMap<>();
 
