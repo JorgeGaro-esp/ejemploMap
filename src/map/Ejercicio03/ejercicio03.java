@@ -5,6 +5,7 @@
 package map.Ejercicio03;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -21,22 +22,22 @@ public class ejercicio03 {
         // TODO code application logic here
 
         String frase = "Ella queria querer lo que queria pero querer no siempre es querer";
-        String[] miArray = frase.split(" ");
+        String[] palabraArray = frase.split(" ");
 
-        TreeMap<String, Integer> miMapa = new TreeMap<>();
+        LinkedHashMap<String, Integer> palabraMap = new LinkedHashMap<>();
 
-        for (String elemento : miArray) {
+        for (String elemento : palabraArray) {
 
-            if (miMapa.containsKey(elemento)) 
+            if (palabraMap.containsKey(elemento)) 
             {
-                miMapa.put(elemento, miMapa.get(elemento) + 1);
+                palabraMap.put(elemento, palabraMap.get(elemento) + 1);
             } else 
             {
-                miMapa.put(elemento, 1);
+                palabraMap.put(elemento, 1);
             }
         }
 
-        for (Map.Entry<String, Integer> entrada : miMapa.entrySet()) 
+        for (Map.Entry<String, Integer> entrada : palabraMap.entrySet()) 
         {
             System.out.println(entrada);
         }
