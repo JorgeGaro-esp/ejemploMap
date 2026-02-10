@@ -21,12 +21,15 @@ public class ejercicio03 {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        String frase = "Ella queria querer lo que queria pero querer no siempre es querer";
+        String frase = "Ella qUEria Querer lo que querIA pero quErEr no siempre es querer";
         String[] palabraArray = frase.split(" ");
 
         LinkedHashMap<String, Integer> palabraMap = new LinkedHashMap<>();
 
-        for (String elemento : palabraArray) {
+        for (String elemento : palabraArray) 
+        {
+
+            elemento = elemento.toLowerCase();
 
             if (palabraMap.containsKey(elemento)) 
             {
