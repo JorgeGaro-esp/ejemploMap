@@ -31,7 +31,7 @@ public class PrincipalContacto {
 
     static public void buscarMap() 
     {    
-        System.out.println("Que numero quieres buscar");
+        System.out.println("Que telefono quiere buscar");
         String telefono = in.next();
 
         for (Map.Entry<String, Contacto> entrada : contactos.entrySet()) 
