@@ -21,7 +21,7 @@ public class PrincipalAlumno {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Map<String,List<Alumno>> alumnosMap = new HashMap<>();
+        Map<String,List<Alumno>> cursosMap = new HashMap<>();
         List<Alumno> alumnosList = new ArrayList<Alumno>();
         
         alumnosList.add(new Alumno("58443472N","Jorge"));
@@ -29,10 +29,10 @@ public class PrincipalAlumno {
         alumnosList.add(new Alumno("58443474R","Marina"));
         alumnosList.add(new Alumno("58443475E","Roberto"));
         
-        alumnosMap.put("DAM1",alumnosList);
+        cursosMap.put("DAM1",alumnosList);
         
-        for (Map.Entry<String,List<Alumno>> entrada: alumnosMap.entrySet()) {
-            System.out.println("Alumnado de " + entrada.getKey() + ": " + alumnosMap.get(entrada.getKey()));
+        for (Map.Entry<String,List<Alumno>> entrada: cursosMap.entrySet()) {
+            System.out.println("Alumnado de " + entrada.getKey() + ": " + cursosMap.get(entrada.getKey()));
         }
         
     }
